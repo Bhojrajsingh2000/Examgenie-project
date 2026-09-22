@@ -21,28 +21,6 @@ a blueprint-driven paper generation engine with PDF export, and the complete
 | Bulk Import | openpyxl / pandas |
 | Payment Gateway | Razorpay (swap in `payments/gateway.py` for Stripe/PayU) |
 
-## 2. Project Structure
-
-```
-examgenie/
-├── manage.py
-├── requirements.txt
-├── .env.example
-├── examgenie/          # settings, root urls, wsgi/asgi
-├── accounts/           # custom User model, roles, auth, dashboards
-├── institute/          # Class, Section, Subject, Chapter
-├── question_bank/      # Question model, CRUD, bulk import
-├── blueprint/          # Paper blueprint (pattern) definitions
-├── papergen/           # Generation engine + PDF export (question paper + answer key)
-├── submissions/        # Teacher-to-Admin submission workflow
-├── notifications/      # In-app + email notifications
-├── payments/           # Payment Gateway integration, secure pay-to-download
-├── reports/             # Generation / submission / payment logs
-├── templates/           # All HTML templates (Bootstrap 5)
-├── static/               # CSS/JS
-├── media/                # Uploaded & generated files at runtime
-└── tests/                # Automated test suite (16 tests, all passing)
-```
 
 ## 3. Setup Instructions
 
